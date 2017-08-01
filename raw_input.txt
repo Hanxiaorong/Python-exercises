@@ -1,0 +1,56 @@
+下面介绍了python raw_input的用法，使用raw_input 能够很方便的丛控制台读入数据。
+
+Python读取输入值操作方法1.输入字符串
+
+#13222319810101****  
+
+nID = '' 
+
+while 1:  
+
+nID = raw_input("Input your id plz")  
+
+if len(nID) != len("13222319810101****"):  
+
+print 'wring length of id,input again'  
+
+else:  
+
+break  
+
+print 'your id is %s' % (nID) 
+
+Python读取输入值操作方法2.输入整数
+
+nAge = int(raw_input("input your age plz:\n"))  
+
+if nAge > 0 and nAge < 120: 
+
+print 'thanks!'  
+
+else:  
+
+print 'bad age'  
+
+print 'your age is %d\n' % nAge 
+
+Python读取输入值操作方法3.输入浮点型
+
+fWeight = 0.0  
+
+fWeight = float(raw_input("input your weight\n"))  
+
+print 'your weight is %f' % fWeight 
+
+Python读取输入值操作方法4.输入16进制数据
+
+nHex = int(raw_input('input hex value(like 0x20):\n'),16)  
+
+print 'nHex = %x,nOct = %d\n' %(nHex,nHex) 
+
+
+Python读取输入值操作方法5.输入8进制数据
+
+nOct = int(raw_input('input oct value(like 020):\n'),8)  
+
+print 'nOct = %o,nDec = %d\n' % (nOct,nOct) 
